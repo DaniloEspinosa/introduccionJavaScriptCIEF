@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 320px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+.resultado {
+    padding: 5px;
+    text-align: right;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.numeros {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.numeros input {
+    padding: 5px;
+    text-align: right;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+
+
+fieldset {
+    padding: 10px;
+}
+
+.operaciones {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botones button {
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    width: 45%;
+}
+.botones button:first-child {
+    background-color: rgb(34, 149, 34);
+}
+
+.botones button:nth-child(2) {
+    background-color: rgb(255 0 0 / .8);
+}
+
+#error1,
+#error2 {
+    height: 1.5rem;
+    color: red;
+    font-size: 1rem;
+    text-align: right;
+}

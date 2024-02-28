@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <form action="" method="get">
+        <div>
+            <label for="name">Escribe tu nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="nombre" required>
+        </div>
+        <div>
+            <label for="edad">Indica tu edad:</label>
+            <input type="number" name="edad" id="edad" min="0" max="100">
+        </div>
+        <div>
+            <label for="tel">Número de teléfono:</label>
+            <input type="tel" name="tel" id="tel">
+        </div>
+        <div>
+            <label for="email">Indica tu correo:</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+            <input type="radio" name="operador" id="sumar">
+            <label for="sumar">Sumar</label>
+            <br>
+            <input type="radio" name="operador" id="restar">
+            <label for="restar">Restar</label>
+            <br>
+            <input type="radio" name="operador" id="multiplicar">
+            <label for="multiplicar">Multiplicar</label>
+            <br>
+            <input type="radio" name="operador" id="dividir">
+            <label for="dividir">Dividir</label>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpiar datos">
+        </div>
+        <div>
+            <!-- Tipo submit envia los datos directo desde html, con button lo enviaremos primero por javascript -->
+            <button type="button" onclick="misDatos()">enviar</button>
+            <button type="reset">limpiar datos</button>
+
+        </div>
+
+        <br><br><br><br><br>
+        <p id="frase">Esperando tus datos</p>
+
+
+    </form>
+
+    <script src="js/formulario.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+</body>
+
+</html>
